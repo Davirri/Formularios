@@ -14,10 +14,10 @@
         <form action="#" method="post">
 
             <label>
-                <input type="text" name="producto" placeholder="Nombre" required>
+                <input type="text" name="nombre" placeholder="Nombre" required>
             </label>
             <label>
-                <input type="text" name="cantidad" placeholder="Direccion" required>
+                <input type="text" name="direccion" placeholder="Direccion" required>
             </label>
             Ciudad
             <select>
@@ -46,28 +46,28 @@
             <label>
                 <div class="producto">
                     <input type="text" name="producto" placeholder="Producto">
+                    <input type="number" name="cantidad2" placeholder="Cantidad">
+                </div>
+                <div class="producto">
+                    <input type="text" name="producto2" placeholder="Producto">
                     <input type="number" name="cantidad" placeholder="Cantidad">
                 </div>
                 <div class="producto">
-                    <input type="text" name="producto" placeholder="Producto">
-                    <input type="number" name="cantidad" placeholder="Cantidad">
-                </div>
-                <div class="producto">
-                    <input type="text" name="producto" placeholder="Producto">
-                    <input type="number" name="cantidad" placeholder="Cantidad">
+                    <input type="text" name="producto3" placeholder="Producto">
+                    <input type="number" name="cantidad3" placeholder="Cantidad">
                 </div>
             </label>
             <label class="tarjeta">
                 <img src="https://media.giphy.com/avatars/Visa-MoneyisChanging/BHmALeeESlOA.png" alt=""><input
-                    type="radio" name="tarjeta" required>
+                    type="radio" name="tarjeta" value="visa">
 
 
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOmJHp0pKCEKhGn-kjADEOiqn7I1NJCSExTA&s" alt=""><input
-                    type="radio" name="tarjeta" required>
+                    type="radio" name="tarjeta" value="mastercard" required>
 
 
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9AYzfOx-yu2mdPvH4lYh6s-iJosRAuQXQQ&s" alt=""><input
-                    type="radio" name="tarjeta" required>
+                    type="radio" name="tarjeta" value="paypal" required>
 
             </label>
             <button type="submit">Enviar Pedido</button>

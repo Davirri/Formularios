@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido de Producto</title>
+    <link rel="stylesheet" type="text/css" href="fomulario.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2> Pedido de Producto</h2>
+        <form action="#" method="post">
+
+            <label>
+                <input type="text" name="producto" placeholder="Nombre" required>
+            </label>
+            <label>
+                <input type="text" name="cantidad" placeholder="Direccion" required>
+            </label>
+            Ciudad
+            <select>
+                <option>Madrid</option>
+                <option>Barcelona</option>
+                <option>Sevilla</option>
+                <option>Granada</option>
+                <option>Valencia</option>
+                <option>Bilbao</option>
+                <option>Toledo</option>
+            </select>
+            C.P
+            <select>
+                <option>28001</option>
+                <option>08001</option>
+                <option>41001</option>
+                <option>18001</option>
+                <option>46001</option>
+                <option>48001</option>
+                <option>45001</option>
+            </select>
+            <label>
+                <input type="text" name="telefono" placeholder="Telefono">
+            </label>
+
+            <label>
+                <div class="producto">
+                    <input type="text" name="producto" placeholder="Producto">
+                    <input type="number" name="cantidad" placeholder="Cantidad">
+                </div>
+                <div class="producto">
+                    <input type="text" name="producto" placeholder="Producto">
+                    <input type="number" name="cantidad" placeholder="Cantidad">
+                </div>
+                <div class="producto">
+                    <input type="text" name="producto" placeholder="Producto">
+                    <input type="number" name="cantidad" placeholder="Cantidad">
+                </div>
+            </label>
+            <label class="tarjeta">
+                <img src="https://media.giphy.com/avatars/Visa-MoneyisChanging/BHmALeeESlOA.png" alt=""><input
+                    type="radio" name="tarjeta" required>
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOmJHp0pKCEKhGn-kjADEOiqn7I1NJCSExTA&s" alt=""><input
+                    type="radio" name="tarjeta" required>
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9AYzfOx-yu2mdPvH4lYh6s-iJosRAuQXQQ&s" alt=""><input
+                    type="radio" name="tarjeta" required>
+
+            </label>
+            <button type="submit">Enviar Pedido</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

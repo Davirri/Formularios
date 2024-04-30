@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" type="text/css" href="fomulario.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Reserva</h2>
+        <form action="#" method="post">
+
+            <label>
+                <input type="text" name="Nombre" placeholder="Nombre" required>
+            </label>
+            <label>
+                <input type="email" name="Correo" placeholder="Correo electrónico" required>
+            </label>
+            <label>
+                <input type="tel" name="Telefono" placeholder="Teléfono" required>
+            </label>
+            <label>
+                <div class="fecha">
+                    <input type="date" name="Fecha entrada" required>
+                    <input type="date" name="Fecha salida" required>
+                </div>
+                <div class="fecha">
+                    <select name="habitacion" required>
+                        <option>Habitación normal</option>
+                        <option>Habitación doble</option>
+                        <option>Suite </option>
+                        <option>Suite presidencial</option>
+                    </select>
+                    <input type="number" name="Nº personas" placeholder="Nº personas" required>
+                </div>
+            </label>
+            <label>
+                <h2>Comentarios</h2>
+                <textarea name="comentarios" id="" cols="20" rows="5">
+                </textarea>
+            </label>
+            
+            <button type="submit">Enviar </button>
+
+        </form>
+    </div>
+</body>
+
+</html>

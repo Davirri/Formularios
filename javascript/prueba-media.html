@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+
+    <style>
+        :root {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-image 1s;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: cursive;
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+            .container__mobile {
+                display: none;
+
+            }
+
+            .container__tablet {
+                display: block;
+                color: aqua;
+            }
+
+            .container__desktop {
+                display: none;
+            }
+
+            :root {
+                background-image: url(https://i.pinimg.com/originals/37/45/dc/3745dc9f41af2e610c7d1181590c6858.gif);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container__mobile {
+                display: block;
+                color: rgb(52, 52, 150);
+            }
+
+            .container__tablet {
+                display: none;
+
+            }
+
+            .container__desktop {
+                display: none;
+            }
+
+            :root {
+                background-image: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/deliveries/614353/original/web-banner-design-header_ws_1369117576/create-three-gif-animation-banner-with-in-24-hour.gif);
+            }
+        }
+
+        @media  screen and (min-width: 1025px) {
+            .container__mobile {
+                display: none;
+            }
+
+            .container__tablet {
+                display: none;
+            }
+
+            .container__desktop {
+                display: block;
+                color: rgb(255, 0, 0);
+            }
+
+            :root {
+                background-image: url(https://www.icegif.com/wp-content/uploads/2023/08/icegif-799.gif);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="container__mobile">Móvil</h1>
+        <h1 class="container__tablet">Tablet</h1>
+        <h1 class="container__desktop">PC</h1>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h1">Media Qteries</h1>
+    <section>
+        <p>declaracion en css que nos permite co se va a visualizar web</p>
+        <p>
+            una mq se compone multiples parts
+            <ul>
+                <li>keyword:
+                    <strong>@media</strong>es una palabra clave
+                </li>
+                <li>mediatype tipo medidas ej screen</li>
+                <li>operadores ej and not only</li>
+                <li>brakpoints la condicion</li>
+                <li>reglas css bloque</li>
+            </ul>
+            <style>
+                .h1{
+                    color: blue;
+                }
+                @media screen and (min-width: 600px) {
+                    .h1{
+                        color: red;
+                    }
+                }
+            </style>
+        </p>
+        <h2>tipos media</h2>
+        print impresion
+        screen pantalal color
+        all todos disp
+        no usados tv handeheld speech etc
+
+
+        <h3 class="titulo2">tips mq</h3>
+        <ol>
+            <li>los mq sobreescriben misma especifidad abajo</li>
+            <li>mismos selectores</li>
+            <li>pensar breakp</li>
+            <li>podemos @media cada select o una para todos select{recommend}</li>
+        </ol>
+        <h3>mobile vs tab vs desk</h3>
+        mob 55% 320 760
+        tab 2% 769 1024
+        desk 43% 1024 1920
+
+        <style>
+            .titulo2{
+                color: red;
+                background-color: aqua;
+            }
+            @media screen and (min-width:768px) and (max-width:1024px) {
+                .titulo2{
+                    color: rgb(0, 153, 255);
+                }
+            }
+        </style>
+    </section>
+</body>
+</html>
